@@ -1,0 +1,41 @@
+/* Header.css */
+
+.Header {
+
+    background-color: var(--primary-green);
+    color: var(--primary-cream);
+    padding: 20px 0;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 2em;
+
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    color: var(--primary-cream);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}

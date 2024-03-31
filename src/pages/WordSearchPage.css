@@ -1,0 +1,12 @@
+.word-search-page {
+
+    margin: 20px;
+    border: 10px solid black;
+    height: 100%;
+}
+
+
+.word-search-grid {
+    border: 10px solid red;
+    height: 100%;
+}

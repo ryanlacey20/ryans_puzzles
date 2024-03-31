@@ -1,0 +1,25 @@
+/* global.css */
+/* In your CSS file */
+@font-face {
+    font-family: 'Instrument Serif';
+    src: url('./resources/font/Instrument_Serif/') format('truetype');
+
+}
+
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
