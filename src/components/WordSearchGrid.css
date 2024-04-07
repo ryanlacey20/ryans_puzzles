@@ -3,6 +3,7 @@
     flex-direction: column;
     grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
     gap: 2px;
+    user-select: none;
 }
 
 .grid-row {
@@ -20,4 +21,19 @@
 
 .word {
     background-color: yellow;
+}
+
+.isSelected {
+    background-color: blue;
+    color: white;
+}
+
+.line {
+    position: absolute;
+    border: 2px solid red;
+
+    pointer-events: none;
+
+    z-index: 100;
+
 }
