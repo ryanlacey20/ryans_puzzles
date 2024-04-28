@@ -17,23 +17,19 @@
     min-width: 30px;
     height: 30px;
     border: 1px solid #ccc;
+    margin: 5px;
 }
 
 .word {
     background-color: yellow;
 }
 
-.isSelected {
-    background-color: blue;
-    color: white;
+.highlighted {
+    background-color: var(--secondary-green);
+    color: var(--primary-cream);
 }
 
-.line {
-    position: absolute;
-    border: 2px solid red;
-
-    pointer-events: none;
-
-    z-index: 100;
-
+.found {
+    background-color: var(--primary-green);
+    color: var(--primary-cream);
 }

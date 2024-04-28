@@ -13,16 +13,15 @@ const WordSearchPage = () => {
             const response = await fetch('http://localhost:4000/api/generate-word-search', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
+                    'Content-Type': 'application/json', 'X-requestType': 'read',
                 },
-                body: JSON.stringify({ word1: 'apple3', word2: 'banana3' }),
+                body: JSON.stringify({ word1: 'apple1', word2: 'banana2', word3: "pineapple3" }),
             });
-            const data = await response.json();
+            let data = await response.json();
+            data = data.data
 
-            const { grid, wordPositions } = data.grid;
-            setGrid(grid);
-            console.log("grid dataa:", grid)
-            console.log("wordpositions outisde", wordPositions)
+            const { gridData, wordPositions } = data;
+            setGrid(gridData);
             setWordPositions(wordPositions);
             setIsLoading(false);
         } catch (error) {
